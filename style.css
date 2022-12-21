@@ -1,0 +1,257 @@
+/* css variable */
+/* navigation bar */
+h1 {
+    text-shadow: 1px 3px 4px rgb(83 56 56);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 10px;
+    top: 0px;
+}
+
+/* logo navigation */
+#logo {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    align-items: center;
+
+}
+
+#logo img {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    /* border: 2px solid black; */
+    height: 60px;
+    border-radius: 1000px;
+
+}
+
+
+/* list styling navigation */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: -1;
+}
+
+/* home */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+#home::before {
+    content: "";
+    background: url('/b.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    opacity: .9;
+
+    z-index: -1;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    margin: 8px;
+
+}
+
+#home p {
+    /* margin: -3px 200px; */
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* our services */
+#section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+}
+
+#services .box {
+    border: 2px solid black;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border-radius: 30px; */
+    background-color: rgb(195 219 238);
+    box-shadow: 0px 10px 10px brown;
+}
+
+#services .box img {
+    margin: 20px;
+    height: 250px;
+    width: 300px;
+}
+
+/* clients */
+#section-client {
+    position: relative;
+    margin: 10px 10px;
+}
+
+#section-client::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    z-index: -1;
+
+}
+
+#clients {
+    display: flex;
+    flex-direction: row;
+    /* margin: 40px 100px; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+
+}
+
+#clients .clents-item img {
+    padding: 20px 20px;
+    height: 120px;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+    margin: 10px 10px;
+}
+
+#contact::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    z-index: -1;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: large;
+}
+
+#footer {
+    padding: 9px 9px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* utility class to use through out the program */
+.h-primary {
+    font-size: 2rem;
+    padding: 10px 10px;
+    text-align: center;
+    font: bold;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(30, 191, 6);
+    color: white;
+    margin: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.centre {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 5px;
+}
